@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scroll-progress"></div>
+
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#accueil" class="logo">
@@ -38,13 +40,49 @@
     <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="hero-content wrap">
-      <p class="eyebrow">Brassée au cœur du Parc naturel régional de Brière</p>
-      <h1>L'esprit aventurier des marais,<br>dans chaque bouteille.</h1>
+      <p class="eyebrow">🌿 Brassée au cœur de la Brière</p>
+      <h1>
+        <span class="line">L'esprit aventurier</span>
+        <span class="line">des marais, dans</span>
+        <span class="line">chaque bouteille.</span>
+      </h1>
       <p class="lead">Ginger Brière est une bière artisanale au gingembre, née entre les chalands, la brume et les hérons du marais briéron.</p>
       <div class="hero-cta">
         <a href="#produits" class="btn btn-primary">Découvrir nos produits</a>
         <a href="#histoire" class="btn btn-ghost">Notre histoire</a>
       </div>
+    </div>
+
+    <a href="#produits" class="scroll-cue" aria-label="Défiler vers le bas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+
+    <svg class="hero-wave" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 40 C 200 90, 400 0, 600 30 C 800 60, 1000 10, 1200 40 L1200 80 L0 80 Z" fill="#fbf6ea"/>
+    </svg>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>🚣 Brassée en Brière 44<span class="dot">•</span></span>
+      <span>🫚 Bière au gingembre artisanale<span class="dot">•</span></span>
+      <span>🦩 Aventure garantie<span class="dot">•</span></span>
+      <span>🌾 Fermentation naturelle<span class="dot">•</span></span>
+      <span>🚣 Brassée en Brière 44<span class="dot">•</span></span>
+      <span>🫚 Bière au gingembre artisanale<span class="dot">•</span></span>
+      <span>🦩 Aventure garantie<span class="dot">•</span></span>
+      <span>🌾 Fermentation naturelle<span class="dot">•</span></span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="wrap stats-grid">
+      <div class="stat"><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span><p>Artisanal</p></div>
+      <div class="stat"><span class="stat-number" data-target="0">0</span><p>Additif</p></div>
+      <div class="stat"><span class="stat-number" data-target="4">0</span><p>Produits</p></div>
+      <div class="stat"><span class="stat-number">∞</span><p>Aventures</p></div>
     </div>
   </section>
 
@@ -57,6 +95,7 @@
       <div class="product-grid">
 
         <article class="product-card product-card--feature">
+          <span class="product-badge">Coup de cœur</span>
           <div class="product-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M26 6h12v8l4 6v34a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4V20l4-6Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
@@ -70,6 +109,7 @@
         </article>
 
         <article class="product-card">
+          <span class="product-badge">Nouveau</span>
           <div class="product-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M22 10 12 18l4 8 6-4v30h20V22l6 4 4-8-10-8-6 4h-8Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
@@ -174,31 +214,35 @@
 
       <ol class="process-steps">
         <li>
+          <span class="step-number">01</span>
           <div class="process-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 54c-6-14-2-24 6-30-10 0-18 8-18 20 0 4 1 7 3 10 3-16 14-24 20-32 2 12-4 18-2 28 1 4-1 4-3 4Z" fill="currentColor"/></svg>
           </div>
-          <h3>1. Récolte du gingembre</h3>
+          <h3>Récolte du gingembre</h3>
           <p>Sélection de racines de gingembre frais pour leur caractère et leur piquant.</p>
         </li>
         <li>
+          <span class="step-number">02</span>
           <div class="process-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 10h24l-2 8H22Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 18l-4 30a6 6 0 0 0 6 6h20a6 6 0 0 0 6-6l-4-30Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 40c4 2 20 2 24 0" stroke="currentColor" stroke-width="2"/></svg>
           </div>
-          <h3>2. Infusion</h3>
+          <h3>Infusion</h3>
           <p>Le gingembre infuse lentement pour révéler toute son intensité aromatique.</p>
         </li>
         <li>
+          <span class="step-number">03</span>
           <div class="process-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="26" cy="30" r="2.5" fill="currentColor"/><circle cx="36" cy="24" r="2" fill="currentColor"/><circle cx="38" cy="36" r="2.5" fill="currentColor"/></svg>
           </div>
-          <h3>3. Fermentation naturelle</h3>
+          <h3>Fermentation naturelle</h3>
           <p>Une fermentation lente et maîtrisée, sans artifice, pour un goût authentique.</p>
         </li>
         <li>
+          <span class="step-number">04</span>
           <div class="process-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M26 6h12v10l4 6v32a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4V22l4-6Z" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
           </div>
-          <h3>4. Mise en bouteille</h3>
+          <h3>Mise en bouteille</h3>
           <p>Embouteillage en Brière, en petites séries, prêt pour l'aventure.</p>
         </li>
       </ol>
